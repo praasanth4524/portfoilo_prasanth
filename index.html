@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HEMA PRASANTH</title>
   <link rel="stylesheet" href="style.css" />
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
+  <!-- Header -->
   <header data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
     <div class="logo">HEMA PRASANTH</div>
     <button class="contact-btn">
-      <a href="https://www.instagram.com/_b.tech._boyz._?utm_source=qr&igsh=enJkM2Fvd3FrNWFk" color="white">Contact</a>
+      <a href="https://www.instagram.com/_b.tech._boyz._?utm_source=qr&igsh=enJkM2Fvd3FrNWFk" target="_blank">Contact</a>
     </button>
   </header>
 
+  <!-- Main Title Section -->
   <main>
     <div class="title-section" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
       <h1>VIDEO EDITOR</h1>
@@ -26,17 +30,19 @@
     </div>
 
     <div class="bio-section" data-aos="fade-up" data-aos-duration="1500">
-      <p class="bio">                
+      <p class="bio">
         WITH <span style="color: #76b0ab;"> OVER FOUR YEARS </span> OF REFINED EXPERTISE
         THIS DESIGNER HAS METICULOUSLY CRAFTED
         SEAMLESS AND INTUITIVE <span style="color: #842626;"> USER EXPERIENCES.</span>
       </p>
     </div>
 
+    <!-- Spline 3D Viewer -->
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.33/build/spline-viewer.js"></script>
     <spline-viewer url="https://prod.spline.design/rdsdbuA2mBDDRiP4/scene.splinecode"></spline-viewer>
   </main>
 
+  <!-- About Section -->
   <section class="about-section">
     <h1 class="about-title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">About Me</h1>
 
@@ -68,26 +74,28 @@
       <div class="card passion" data-aos="fade-up" data-aos-duration="1500">
         <h2 class="card-title">PASSION FOR EDITING</h2>
         <p class="card-text">
-          Freelance editor skilled in video, graphics & music using Premiere Pro, After Effects, FL Studio, and more.
+          Freelance editor skilled in video, graphics & music using Premiere Pro, After Effects, FL Studio,
+          and more.
         </p>
         <img src="images/gradient3&4.png" alt="" class="background-img">
       </div>
     </div>
   </section>
 
+  <!-- Projects Section -->
   <section class="projects-section">
     <h3 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">My Projects</h3>
     <div class="slider" style="--width: 60rem; --height: 40rem; --quantity: 4;">
       <div class="list">
-        <div class="item" style="--position: 1"><video loop playsinline src="video/project-1.mp4"></video></div>
-        <div class="item" style="--position: 2"><video loop playsinline src="video/project-2.mp4"></video></div>
-        <div class="item" style="--position: 3"><video loop playsinline src="video/project-3.mp4"></video></div>
-        <div class="item" style="--position: 4"><video loop playsinline src="video/project-4.mp4"></video></div>
+        <div class="item" style="--position: 1"><video loop playsinline autoplay muted src="video/project-1.mp4"></video></div>
+        <div class="item" style="--position: 2"><video loop playsinline autoplay muted src="video/project-2.mp4"></video></div>
+        <div class="item" style="--position: 3"><video loop playsinline autoplay muted src="video/project-3.mp4"></video></div>
+        <div class="item" style="--position: 4"><video loop playsinline autoplay muted src="video/project-4.mp4"></video></div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT SECTION -->
+  <!-- Contact Section -->
   <section class="contact-section">
     <div class="section-header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
       <h3>Get In Touch</h3>
@@ -95,15 +103,16 @@
     </div>
 
     <div class="contact-grid" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="1500">
+      <!-- Contact Info -->
       <div class="info-card">
         <h3>Contact info</h3>
         <div class="contact-item">
           <p>Email</p>
-          <a href="#">prasanthdarkness77@gmail.com</a>
+          <a href="mailto:prasanthdarkness77@gmail.com">prasanthdarkness77@gmail.com</a>
         </div>
         <div class="contact-item">
           <p>Phone</p>
-          <a href="#">+91 90422 05426</a>
+          <a href="tel:+919042205426">+91 90422 05426</a>
         </div>
         <div class="contact-item">
           <p>Location</p>
@@ -111,42 +120,30 @@
         </div>
         <div class="social-link">
           <p>Contact with me</p>
-          <a href="#">Youtube</a>
-          <a href="#">Linkedin</a>
-          <a href="#">Instagram</a>
+          <a href="#" target="_blank">Youtube</a>
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">Instagram</a>
         </div>
       </div>
 
+      <!-- Contact Form -->
       <div class="info-card">
         <div class="info-card-content">
           <h3>Send Message</h3>
-
           <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-            <!-- Web3Forms Access Key -->
             <input type="hidden" name="access_key" value="60b6d3ac-9d5e-4a3a-b7a1-c8843f77e96a">
-
-            <!-- Honeypot -->
             <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
             <div class="form-group">
-              <input type="text" id="name" name="name" placeholder="Your name" required class="form-control" />
+              <input type="text" name="name" placeholder="Your Name" required class="form-control" />
             </div>
-
             <div class="form-group">
-              <input type="email" id="email" name="email" placeholder="Your Email" required class="form-control" />
+              <input type="email" name="email" placeholder="Your Email" required class="form-control" />
             </div>
-
             <div class="form-group">
-              <input type="text" id="subject" name="subject" placeholder="Subject" required class="form-control" />
+              <textarea name="message" placeholder="Your Message" required class="form-control"></textarea>
             </div>
-
-            <div class="form-group">
-              <textarea name="message" id="message" placeholder="Your Message" required class="form-control"></textarea>
-            </div>
-
-            <button type="submit" id="submitBtn" class="message-btn">Send Message</button>
-
-            <div class="success-message" id="successMessage" style="display:none;">
+            <button type="submit" class="message-btn">Send Message</button>
+            <div class="success-message" id="successMessage" style="display: none;">
               Message sent successfully! I'll get back to you soon.
             </div>
           </form>
@@ -155,6 +152,7 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <h3>©️2025, Made with ❤️ by Hema Prasanth</h3>
     <div class="box-icons">
@@ -170,7 +168,7 @@
     AOS.init();
   </script>
 
-  <!-- Success message script -->
+  <!-- Contact Form Submit Script -->
   <script>
     document.getElementById("contactForm").addEventListener("submit", function (e) {
       e.preventDefault();
@@ -192,10 +190,12 @@
         }
       }).catch(error => {
         alert("Something went wrong.");
+        console.error(error);
       });
     });
   </script>
 
   <script src="app.js"></script>
 </body>
+
 </html>
