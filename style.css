@@ -573,7 +573,13 @@ footer {
         font-size: 6.3rem;
         letter-spacing: 0;
     }
+    
+    .title-section h2{
+        font-size: 55px;
+        text-align: justify;
 
+        
+    }
 
 
     .bento-grid {
